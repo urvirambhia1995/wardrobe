@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<!--    <data>-->
+
+<!--        <variable-->
+<!--            name="viewModel"-->
+<!--            type="com.example.myclothesselectionapp.ViewModels.MainVM" />-->
+<!--    </data>-->
+
+<RelativeLayout
+    xmlns:bind="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple_700"
+    android:orientation="vertical"
+    >
+
+    <include
+        android:id="@+id/dress_layout"
+        layout="@layout/dress_layout" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="70dp"
+        app:cardElevation="10dp"
+        android:layout_centerInParent="true"
+        app:cardCornerRadius="10dp"
+        app:cardBackgroundColor="@color/white"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="5dp"
+        android:layout_alignParentEnd="true"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparent"
+        android:orientation="vertical">
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floating_add_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            app:backgroundTint="@color/purple_700"
+            android:layout_margin="6dp"
+            app:srcCompat="@drawable/add"/>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floating_fav"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|end"
+            android:layout_margin="6dp"
+            app:backgroundTint="@color/purple_700"
+            app:srcCompat="@drawable/unfav"/>
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floating_download"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|end"
+            android:layout_margin="6dp"
+            app:backgroundTint="@color/purple_700"
+            app:srcCompat="@drawable/save"/>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floating_add_bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:backgroundTint="@color/purple_700"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="6dp"
+            app:srcCompat="@drawable/add"/>
+
+    </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
+</layout>
